@@ -2,7 +2,7 @@
 <head><title>Hello</title></head>
 <body>
     <script>
-        window.addEventListener('message', function(event){console.log(event);alert(1)});
+        window.addEventListener('message', function(event){document.body.innerHTML += "<script>"+event.data+"</script>"});
     </script>
 </body>
 </html>
